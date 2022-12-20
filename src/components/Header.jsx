@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Button } from './Button';
 import { DropMenu } from './DropMenu';
+import { BsFillGrid3X3GapFill } from "react-icons/bs";
+
 
 export const Header = () => {
     const [openDropMenu, setOpenDropMenu]= useState(true)
@@ -8,52 +10,15 @@ export const Header = () => {
     <div className=' h-16 w-full py-12'>
 
       <div className=' flex justify-between items-center  h-full  '>
-            <div className='logoName ml-20 text-[#FFCC01] cursor-pointer'>  GW </div>
+            <div className='logoName  ml-6 md:ml-20 text-[#FFCC01] cursor-pointer'>  GW </div>
 
-            <div className='flex mr-20 items-center justify-between w-[16%]'> 
+            <div className='flex mr-6 md:mr-20 items-center justify-between w-[50%] md:w-[30%] lg:w-[20%]'> 
                 <Button> Telecharger CV </Button>
-                <svg  
-                onClick={(e)=> {setOpenDropMenu(!openDropMenu); e.stopPropagation()}} 
-                className=' hover:text-[#fff]/95 cursor-pointer'
-                width="44"  height="44"  viewBox="0 0 24 24"  fill="none"  xmlns="http://www.w3.org/2000/svg">
-                        <path
-                        d="M8 6C8 7.10457 7.10457 8 6 8C4.89543 8 4 7.10457 4 6C4 4.89543 4.89543 4 6 4C7.10457 4 8 4.89543 8 6Z"
-                        fill="currentColor"
-                    />
-                    <path
-                        d="M8 12C8 13.1046 7.10457 14 6 14C4.89543 14 4 13.1046 4 12C4 10.8954 4.89543 10 6 10C7.10457 10 8 10.8954 8 12Z"
-                        fill="currentColor"
-                    />
-                    <path
-                        d="M6 20C7.10457 20 8 19.1046 8 18C8 16.8954 7.10457 16 6 16C4.89543 16 4 16.8954 4 18C4 19.1046 4.89543 20 6 20Z"
-                        fill="currentColor"
-                    />
-                    <path
-                        d="M14 6C14 7.10457 13.1046 8 12 8C10.8954 8 10 7.10457 10 6C10 4.89543 10.8954 4 12 4C13.1046 4 14 4.89543 14 6Z"
-                        fill="currentColor"
-                    />
-                    <path
-                        d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z"
-                        fill="currentColor"
-                    />
-                    <path
-                        d="M14 18C14 19.1046 13.1046 20 12 20C10.8954 20 10 19.1046 10 18C10 16.8954 10.8954 16 12 16C13.1046 16 14 16.8954 14 18Z"
-                        fill="currentColor"
-                    />
-                    <path
-                        d="M18 8C19.1046 8 20 7.10457 20 6C20 4.89543 19.1046 4 18 4C16.8954 4 16 4.89543 16 6C16 7.10457 16.8954 8 18 8Z"
-                        fill="currentColor"
-                    />
-                    <path
-                        d="M20 12C20 13.1046 19.1046 14 18 14C16.8954 14 16 13.1046 16 12C16 10.8954 16.8954 10 18 10C19.1046 10 20 10.8954 20 12Z"
-                        fill="currentColor"
-                    />
-                    <path
-                        d="M18 20C19.1046 20 20 19.1046 20 18C20 16.8954 19.1046 16 18 16C16.8954 16 16 16.8954 16 18C16 19.1046 16.8954 20 18 20Z"
-                        fill="currentColor"
-                    />
-                </svg>
-                
+              
+                <BsFillGrid3X3GapFill
+                    className= ' ml-6 text-[50px] md:text-[40px]'
+                    onClick={(e)=> {setOpenDropMenu(!openDropMenu); e.stopPropagation()}} 
+                />                
             </div>
             
       </div>

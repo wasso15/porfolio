@@ -11,7 +11,7 @@ export const DropMenu = ({open, setOpen}) => {
       })
   return (
     <>
-         {open && <div className=' bg-white rounded w-[290px] h-[300px] absolute right-10 top-[75px] text-[#222A35]'>
+         {open && <div className=' bg-white rounded w-screen md:w-[290px] h-screen md:h-[340px] absolute md:right-10 top-[75px] text-[#222A35]'>
 
                 <ul className='dropMenuList'>
 
@@ -19,7 +19,7 @@ export const DropMenu = ({open, setOpen}) => {
                     <li>Récompense</li>
                     <li> Blog</li>
                     <li>Contact</li>
-                    <div className=' w-[80%] m-auto border-b-2 p-0'></div>
+                    <div className=' mt-9 w-[80%] mx-auto border-b-2 p-0'></div>
                     <li className='flex justify-between w-[80%] m-auto text-[25px]'>
                         <FaLinkedin/>
                         <FaTwitter/>
