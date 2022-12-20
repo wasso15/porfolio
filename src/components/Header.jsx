@@ -5,14 +5,15 @@ import { Button } from './Button';
 
 export const Header = () => {
   return (
-    <div className=' h-16 bg-black w-full'>
+    <div className=' h-16 w-full py-12'>
 
-      <div className=' flex justify-between items-center border h-full'>
-            <div>  GW </div>
+      <div className=' flex justify-between items-center  h-full  '>
+            <div className='logoName ml-20 text-[#FFCC01] cursor-pointer'>  GW </div>
 
             <div className='flex mr-20 items-center justify-between w-[20%]'> 
                 <Button> Telecharger CV </Button>
-                <svg width="44"  height="44"  viewBox="0 0 24 24"  fill="none"  xmlns="http://www.w3.org/2000/svg">
+                <svg  className=' hover:text-[#FFCC01] cursor-pointer'
+                width="44"  height="44"  viewBox="0 0 24 24"  fill="none"  xmlns="http://www.w3.org/2000/svg">
                         <path
                         d="M8 6C8 7.10457 7.10457 8 6 8C4.89543 8 4 7.10457 4 6C4 4.89543 4.89543 4 6 4C7.10457 4 8 4.89543 8 6Z"
                         fill="currentColor"
