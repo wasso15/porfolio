@@ -15,7 +15,7 @@ const Home = () => {
       <FullPageSections>
         {/* header Section */}
         <FullpageSection style={SectionStyle}>
-          <div className=' bg-[#222A35] h-screen w-screen text-white '>
+          <div className=' bg-[#222A35] bg-LineTech bg-cover h-screen w-screen text-white '>
             <Header/>
             <Hero/>
              
