@@ -1,7 +1,5 @@
 import React from 'react'
-import { MdApps } from "react-icons/md";
 import { Button } from './Button';
-// import {MenuGridO} from 'css.gg'
 
 export const Header = () => {
   return (
@@ -12,7 +10,7 @@ export const Header = () => {
 
             <div className='flex mr-20 items-center justify-between w-[20%]'> 
                 <Button> Telecharger CV </Button>
-                <svg  className=' hover:text-[#FFCC01] cursor-pointer'
+                <svg  className=' hover:text-[#fff]/95 cursor-pointer'
                 width="44"  height="44"  viewBox="0 0 24 24"  fill="none"  xmlns="http://www.w3.org/2000/svg">
                         <path
                         d="M8 6C8 7.10457 7.10457 8 6 8C4.89543 8 4 7.10457 4 6C4 4.89543 4.89543 4 6 4C7.10457 4 8 4.89543 8 6Z"

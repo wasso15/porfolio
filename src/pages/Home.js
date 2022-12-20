@@ -1,6 +1,7 @@
 import React from 'react'
 import Fullpage,{FullPageSections, FullpageSection, FullpageNavigation  } from '@ap.cx/react-fullpage';
 import { Header } from '../components/Header';
+import { Hero } from '../components/Hero';
 
 
 const Home = () => {
@@ -16,7 +17,8 @@ const Home = () => {
         <FullpageSection style={SectionStyle}>
           <div className=' bg-[#222A35] h-screen w-screen text-white '>
             <Header/>
-             Header
+            <Hero/>
+             
           </div>
         </FullpageSection>
 
