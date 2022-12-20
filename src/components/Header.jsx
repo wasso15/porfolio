@@ -5,7 +5,7 @@ import { BsFillGrid3X3GapFill } from "react-icons/bs";
 
 
 export const Header = () => {
-    const [openDropMenu, setOpenDropMenu]= useState(true)
+    const [openDropMenu, setOpenDropMenu]= useState(false)
   return (
     <div className=' h-16 w-full py-12'>
 
