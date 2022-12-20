@@ -1,14 +1,12 @@
 import React from 'react'
 import Fullpage,{FullPageSections, FullpageSection, FullpageNavigation  } from '@ap.cx/react-fullpage';
+import { Header } from '../components/Header';
 
 
 const Home = () => {
     const SectionStyle= {
         height:'100vh', 
         width: '100%', 
-        // display:'flex', 
-        // justifyContent:'center', 
-        // alignItems:'center'
       }
   return (
     <Fullpage>
@@ -17,6 +15,7 @@ const Home = () => {
         {/* header Section */}
         <FullpageSection style={SectionStyle}>
           <div className=' bg-[#222A35] h-screen w-screen text-white '>
+            <Header/>
              Header
           </div>
         </FullpageSection>
