@@ -1,7 +1,6 @@
 import React from 'react'
 
 export const SectionTitle = ({children, color }) => {
-    console.log(color)
   return (
     <div className=' ml-6 md:ml-14  py-4'>
          <div className={`sectionTitle text-[32px] text-[${color}] `}>{children}</div>

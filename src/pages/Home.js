@@ -5,6 +5,8 @@ import { Hero } from '../components/Hero';
 import { SectionTitle } from '../components/SectionTitle';
 import { Card } from '../components/Card';
 import { Cards } from '../components/Cards';
+import ButtonSecondary from '../components/ButtonSecondary';
+import { Gallery } from '../components/Gallery';
 
 
 const Home = () => {
@@ -28,15 +30,17 @@ const Home = () => {
         <FullpageSection style={SectionStyle}>
             <div className=' bg-[#F4F4F5] bg-LineTech bg-cover h-screen w-screen text-white '>
               <SectionTitle color ={'#222A35'}> Réalisation </SectionTitle>
-              {/* <Card/> */}
               <Cards> Web developpement </Cards>
-              <Cards>Machine Learnings </Cards>
-              <Cards> Graphisme </Cards>
+              <Cards> Machine Learnings & Graphisme </Cards>
             </div>
         </FullpageSection>
 
         <FullpageSection style={SectionStyle}>
-          <h1> Screen 3 </h1>
+           <div className=' bg-[#222A35]  h-screen w-screen text-white '>
+              <SectionTitle color ={'#fffff'}> Récompense </SectionTitle>
+              <Gallery/>
+              {/* <ButtonSecondary> En Savoir Plus </ButtonSecondary> */}
+          </div>
         </FullpageSection>
 
         <FullpageSection style={SectionStyle}>
