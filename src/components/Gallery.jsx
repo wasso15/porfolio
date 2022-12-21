@@ -48,7 +48,7 @@ export const Gallery = () => {
     </div>
     
      <div className=' flex flex-wrap m-0 md:-m-2 pt-3 justify-between w-[90%] mx-auto '>
-        <ButtonSecondary> En Savoir Plus </ButtonSecondary>
+        <ButtonSecondary > En Savoir Plus </ButtonSecondary>
         <ButtonSecondary> En Savoir Plus </ButtonSecondary>
     </div>
               

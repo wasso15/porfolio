@@ -7,6 +7,7 @@ import { Card } from '../components/Card';
 import { Cards } from '../components/Cards';
 import ButtonSecondary from '../components/ButtonSecondary';
 import { Gallery } from '../components/Gallery';
+import { Footer } from '../components/Footer';
 
 
 const Home = () => {
@@ -39,12 +40,16 @@ const Home = () => {
            <div className=' bg-[#222A35]  h-screen w-screen text-white '>
               <SectionTitle color ={'#fffff'}> Récompense </SectionTitle>
               <Gallery/>
-              {/* <ButtonSecondary> En Savoir Plus </ButtonSecondary> */}
           </div>
         </FullpageSection>
 
         <FullpageSection style={SectionStyle}>
-          <h1> Screen 4 </h1>
+          <div className=' bg-[#F4F4F5] h-screen w-screen text-white '>
+              <div className=' h-[90%]'></div>
+              <div className='bg-[#222A35] h-full'>
+                <Footer/>
+              </div>
+          </div>
         </FullpageSection>
 
       </FullPageSections>
