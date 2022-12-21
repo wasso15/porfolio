@@ -16,7 +16,7 @@ export const Header = () => {
                 <Button> Telecharger CV </Button>
               
                 <BsFillGrid3X3GapFill
-                    className= ' ml-6 text-[50px] md:text-[40px]'
+                    className= ' ml-6 text-[50px] md:text-[40px] cursor-pointer'
                     onClick={(e)=> {setOpenDropMenu(!openDropMenu); e.stopPropagation()}} 
                 />                
             </div>

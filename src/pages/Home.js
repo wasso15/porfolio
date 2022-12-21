@@ -8,6 +8,8 @@ import { Cards } from '../components/Cards';
 import ButtonSecondary from '../components/ButtonSecondary';
 import { Gallery } from '../components/Gallery';
 import { Footer } from '../components/Footer';
+import { ContactForm } from '../components/ContactForm';
+import { Maps } from '../components/Maps';
 
 
 const Home = () => {
@@ -44,8 +46,17 @@ const Home = () => {
         </FullpageSection>
 
         <FullpageSection style={SectionStyle}>
-          <div className=' bg-[#F4F4F5] h-screen w-screen text-white '>
-              <div className=' h-[90%]'></div>
+          <div className=' bg-[#F4F4F5] h-screen w-screen bg-LineTech text-white '>
+              <div className=' h-[90%] flex'>
+                  <div className=' w-1/2'> 
+                      <SectionTitle color ={'#222A35'}> Contact </SectionTitle>
+                      <ContactForm/>
+                  </div>
+                  <div className=' w-1/2 bg-[#FFCC01]'> 
+                      <Maps/>
+                   </div>
+              </div>
+
               <div className='bg-[#222A35] h-full'>
                 <Footer/>
               </div>
