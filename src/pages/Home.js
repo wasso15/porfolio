@@ -1,11 +1,9 @@
 import React from 'react'
-import Fullpage,{FullPageSections, FullpageSection, FullpageNavigation  } from '@ap.cx/react-fullpage';
+import Fullpage,{FullPageSections, FullpageSection, FullpageNavigation,F  } from '@ap.cx/react-fullpage';
 import { Header } from '../components/Header';
 import { Hero } from '../components/Hero';
 import { SectionTitle } from '../components/SectionTitle';
-import { Card } from '../components/Card';
 import { Cards } from '../components/Cards';
-import ButtonSecondary from '../components/ButtonSecondary';
 import { Gallery } from '../components/Gallery';
 import { Footer } from '../components/Footer';
 import { ContactForm } from '../components/ContactForm';
@@ -19,12 +17,12 @@ const Home = () => {
       }
   return (
     <Fullpage>
-    <FullpageNavigation/>
+  <FullpageNavigation/>
       <FullPageSections>
 
       {/* header Section */}
         <FullpageSection style={SectionStyle}>
-          <div className=' bg-[#222A35] bg-LineTech bg-cover h-screen w-screen text-white '>
+          <div className=' bg-[#222A35]  bg-cover h-screen w-screen bg-LineTech text-white '>
             <Header/>
             <Hero/>
           </div>
@@ -39,7 +37,7 @@ const Home = () => {
         </FullpageSection>
 
         <FullpageSection style={SectionStyle}>
-           <div className=' bg-[#222A35]  h-screen w-screen text-white '>
+           <div className=' bg-[#222A35]  h-screen w-screen bg-LineTech text-white '>
               <SectionTitle color ={'#fffff'}> Récompense </SectionTitle>
               <Gallery/>
           </div>
