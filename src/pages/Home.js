@@ -1,5 +1,5 @@
-import React from 'react'
-import Fullpage,{FullPageSections, FullpageSection, FullpageNavigation,F  } from '@ap.cx/react-fullpage';
+import React, { useEffect } from 'react'
+import Fullpage,{FullPageSections, FullpageSection, FullpageNavigation } from '@ap.cx/react-fullpage';
 import { Header } from '../components/Header';
 import { Hero } from '../components/Hero';
 import { SectionTitle } from '../components/SectionTitle';
@@ -8,10 +8,21 @@ import { Gallery } from '../components/Gallery';
 import { Footer } from '../components/Footer';
 import { ContactForm } from '../components/ContactForm';
 import { Maps } from '../components/Maps';
+import heroData from '../heroData';
+import { useCycle } from 'framer-motion';
 
 
 const Home = () => {
-    const SectionStyle= {
+  const {hero0, hero1, hero2, hero3}= heroData
+  const [currentHero, setCurrentHero ]=useCycle(hero0, hero1, hero2, hero3); 
+ 
+  useEffect(() => {
+
+    const timeOut = setTimeout(setCurrentHero, 5000);
+    return () => clearTimeout(timeOut);
+  }, [currentHero, setCurrentHero]);    
+  
+  const SectionStyle= {
         height:'100vh', 
         width: '100%', 
       }
@@ -24,7 +35,7 @@ const Home = () => {
         <FullpageSection style={SectionStyle}>
           <div className=' bg-[#222A35]  bg-cover h-screen w-screen bg-LineTech text-white '>
             <Header/>
-            <Hero/>
+            <Hero heroData={currentHero}/>
           </div>
         </FullpageSection>
 
