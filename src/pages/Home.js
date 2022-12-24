@@ -57,11 +57,11 @@ const Home = () => {
         <FullpageSection style={SectionStyle}>
           <div className=' bg-[#F4F4F5] h-screen w-screen bg-LineTech text-white '>
               <div className=' h-[90%] flex'>
-                  <div className=' w-1/2'> 
+                  <div className=' w-full border md:w-1/2'> 
                       <SectionTitle color ={'#222A35'}> Contact </SectionTitle>
                       <ContactForm/>
                   </div>
-                  <div className=' w-1/2 bg-[#FFCC01]'> 
+                  <div className='hidden md:block w-1/2 bg-[#FFCC01]'> 
                       <Maps/>
                    </div>
               </div>

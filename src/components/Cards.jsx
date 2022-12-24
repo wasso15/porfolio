@@ -25,15 +25,15 @@ export const Cards = ({children}) => {
         drag='x' dragConstraints={{right:0, left:-width}}
         className='w-[100%] md:w-[90%] m-auto flex overflow-scroll-x gap-5 cursor-grab
       '>
-      
-
+    
           <Card/>
           <Card/>
           <Card/>
           <Card/>
           <Card/>
           <Card/>
-          <Card/>    
+          <Card/>  
+            
       </motion.div>
 
     </div>

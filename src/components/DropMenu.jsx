@@ -5,7 +5,6 @@ import { motion} from "framer-motion";
 
 
 export const DropMenu = ({open, setOpen}) => {
-    console.log(open)
     window.addEventListener('click', (e)=>{
         setOpen(false)
 
