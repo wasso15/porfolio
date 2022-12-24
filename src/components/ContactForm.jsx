@@ -3,8 +3,15 @@ import { Button } from './Button'
 import { motion } from 'framer-motion'
 import emailjs from 'emailjs-com'
 import validator from 'validator'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 export const ContactForm = () => {
+
   const formData= useRef();
+   const showToastMessage = () => {
+        toast.success('Success Notification !', {
+            position: toast.POSITION.TOP_RIGHT
+        });}
 
   const onSubmitForm= (e)=>{
     e.preventDefault()   
@@ -16,7 +23,8 @@ export const ContactForm = () => {
       });
       setEmail(' '); 
       setNom(' ')
-      setMessage('')
+      setMessage(' ')
+      formData.current.reset()
     }
 
 
@@ -120,7 +128,9 @@ export const ContactForm = () => {
     <motion.button 
     whileTap={{scale:0.05}}
     type='submit' 
+    onClick={()=>showToastMessage()}
     className=' rounded-sm bg-[#FFCC01] hover:bg-[#FFCC01]/95 w-[160px] h-[40px] text-[#222A35] text-[12px] lg:text-sm font-bold disabled:bg-[#d1d1d1] disabled:cursor-not-allowed' disabled={isDisable} > Envoyer </motion.button>
+        <ToastContainer/>
         </form>
 </div>
     </>
